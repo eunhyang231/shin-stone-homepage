@@ -1,0 +1,207 @@
+/* ===================================== */
+/* Accessories Page */
+/* ===================================== */
+
+.small-product-section{
+    padding:120px 0;
+    background:#fff;
+}
+
+.small-product-section h2{
+    font-size:42px;
+    margin-bottom:48px;
+    letter-spacing:-0.04em;
+    color:var(--color-charcoal);
+}
+
+
+/* ===================================== */
+/* Small Product Grid */
+/* ===================================== */
+
+.small-product-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+
+
+/* ===================================== */
+/* Small Product Card */
+/* ===================================== */
+
+.small-product-card{
+    border:1px solid var(--color-line);
+    background:#fff;
+    transition:all .3s ease;
+	display:flex;
+    flex-direction:column;
+}
+
+.small-product-card:hover{
+    transform:translateY(-6px);
+	transform:scale(1.05);
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+.small-product-image{
+    height:190px;
+    background:#f3f4f6;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#9ca3af;
+    font-size:13px;
+    font-weight:900;
+    letter-spacing:.22em;
+}
+
+.small-product-body{
+    padding:28px;
+	
+	display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.small-product-code{
+    display:block;
+    margin-bottom:14px;
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:.22em;
+    color:var(--color-silver);
+}
+
+.small-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    width:fit-content;
+    margin-top:auto;
+    padding:8px 12px;
+
+    border:1px solid var(--color-line);
+    background:#fff;
+
+    font-size:14px;
+    font-weight:800;
+    color:var(--color-charcoal);
+
+    transition:all .25s ease;
+}
+
+.small-btn:hover{
+    background:var(--color-navy);
+    border-color:var(--color-navy);
+    color:#fff;
+}
+
+.small-product-body h3{
+    font-size:24px;
+    margin-bottom:14px;
+    color:var(--color-charcoal);
+}
+
+.small-product-body p{
+    min-height:54px;
+    font-size:15px;
+    line-height:1.75;
+    color:var(--color-text);
+    margin-bottom:22px;
+}
+
+
+/* ===================================== */
+/* Mini Spec List */
+/* ===================================== */
+
+.mini-spec-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+	margin-bottom:16px;
+}
+
+.mini-spec-list span{
+    padding:8px 12px;
+    background:#f8f9fa;
+    border:1px solid var(--color-line);
+    font-size:13px;
+    font-weight:700;
+    color:var(--color-charcoal);
+}
+
+/* ===================================== */
+/* Related Tools */
+/* ===================================== */
+
+.related-tools{
+    padding:90px 0;
+    background:#fff;
+    border-top:1px solid var(--color-line);
+}
+
+.related-tools-card{
+    display:grid;
+    grid-template-columns:130px 1fr auto;
+    align-items:center;
+    gap:34px;
+
+    padding:44px 50px;
+
+    border:1px solid var(--color-line);
+    background:#fff;
+
+    transition:all .3s ease;
+}
+
+.related-tools-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+}
+
+.related-tools-icon{
+    width:130px;
+    height:130px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#f3f4f6;
+
+    font-size:13px;
+    font-weight:900;
+    letter-spacing:.22em;
+    color:#9ca3af;
+}
+
+.related-tools-content span{
+    display:block;
+    margin-bottom:12px;
+
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:.22em;
+    color:var(--color-silver);
+}
+
+.related-tools-content h2{
+    font-size:34px;
+    margin-bottom:16px;
+    color:var(--color-charcoal);
+}
+
+.related-tools-content p{
+    font-size:16px;
+    color:var(--color-text);
+}
+
+.related-tools-card strong{
+    font-size:16px;
+    font-weight:900;
+    color:var(--color-navy);
+    white-space:nowrap;
+}

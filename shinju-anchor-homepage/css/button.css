@@ -1,0 +1,62 @@
+/* =========================
+   Button
+========================= */
+
+.btn-primary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+
+  min-width:180px;
+  height:56px;
+  padding:0 32px;
+
+  background:var(--color-white);
+  color:var(--color-navy);
+
+  border:1px solid rgba(255,255,255,.7);
+  font-size:15px;
+  font-weight:900;
+  letter-spacing:-0.02em;
+
+  transition:all .25s ease;
+}
+
+.btn-primary::after{
+  content:"→";
+  transition:transform .25s ease;
+}
+
+.btn-primary:hover{
+  background:transparent;
+  color:var(--color-white);
+  border-color:var(--color-white);
+}
+
+.btn-primary:hover::after{
+  transform:translateX(5px);
+}
+
+.btn-outline{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:150px;
+  height:50px;
+  padding:0 26px;
+
+  background:transparent;
+  color:var(--color-navy);
+
+  border:1px solid var(--color-navy);
+  font-size:15px;
+  font-weight:800;
+
+  transition:all .25s ease;
+}
+
+.btn-outline:hover{
+  background:var(--color-navy);
+  color:var(--color-white);
+}
