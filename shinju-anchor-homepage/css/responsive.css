@@ -961,6 +961,21 @@
         margin-bottom:18px !important;
     }
 	
+	 .hero::after{
+    display:none;
+	
+  }
+
+  .hero::before{
+    filter:blur(1.5px);
+    transform:scale(1.03);
+  }
+
+  .hero{
+    min-height:620px;
+    background-position:center;
+  }
+	
 /* PRODUCT INFORMATION */
 
 .product-notice-section{
