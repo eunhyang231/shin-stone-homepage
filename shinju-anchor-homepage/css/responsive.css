@@ -961,7 +961,7 @@
         margin-bottom:18px !important;
     }
 	
-	 .hero::after{
+	.hero::after{
     display:none;
 	
   }
@@ -1009,4 +1009,47 @@
     font-size:14px !important;
 }
 
+}
+
+/* =========================
+   Product Mobile
+========================= */
+@media (max-width:768px){
+
+    .category-card{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:30px 20px;
+    }
+
+    .category-image{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-bottom:12px;
+    }
+
+    .category-image img{
+        width:230px;
+        max-width:90%;
+        height:auto;
+        display:block;
+    }
+
+    .category-content{
+        width:100%;
+        text-align:center;
+    }
+
+    .category-content p{
+        max-width:260px;
+        margin:14px auto 20px;
+    }
+
+    .category-link{
+        display:inline-block;
+    }
 }
