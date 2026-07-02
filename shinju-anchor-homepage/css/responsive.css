@@ -1185,10 +1185,7 @@
 }
 @media (max-width:768px){
 
-  .header .inner{
-    height:70px;
-    padding:0 12px;
-  }
+  
 
   /* 로고 */
   .logo img,
@@ -1206,8 +1203,6 @@
     font-weight:700;
     letter-spacing:-0.02em;
   }
-
-}
 
 /* =========================
    Mobile Header
@@ -1233,3 +1228,7 @@
     letter-spacing:-0.02em;
     white-space:nowrap;
 }
+	
+}
+
+
