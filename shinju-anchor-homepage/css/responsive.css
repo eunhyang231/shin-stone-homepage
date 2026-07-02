@@ -1097,4 +1097,21 @@
     padding:0 24px;
     font-size:14px;
   }
+
+	.hero .hero-title{
+    font-size:42px !important;
+    line-height:1.12 !important;
+    letter-spacing:-0.06em;
+    margin-bottom:22px;
+  }
+
+  .hero .hero-description{
+    font-size:15px !important;
+    line-height:1.8 !important;
+    margin-bottom:28px;
+  }
+
+  .hero .hero-content{
+    gap:0;
+  }
 }
