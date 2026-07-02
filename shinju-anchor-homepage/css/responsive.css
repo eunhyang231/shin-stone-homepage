@@ -46,7 +46,7 @@
 	display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f8f9fb;
+    /*background: #f8f9fb;*/
     padding: 10px 18px;
   }
 
@@ -59,7 +59,7 @@
     margin-right:-22px;
    /* width:calc(100% + 44px);*/
 
-    background:#f8f9fb;
+    /*background:#f8f9fb;*/
 
     border-top:1px solid #eceff3;
     border-bottom:1px solid #eceff3;
