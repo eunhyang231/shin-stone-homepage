@@ -239,3 +239,29 @@ img{
   color:#e5e7eb;
   margin-bottom:46px;
 }
+
+/* =========================
+   Hero Layout Fix
+========================= */
+
+.hero .inner{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 24px;
+  width:100%;
+}
+
+.hero .hero-content{
+  max-width:760px;
+  width:100%;
+}
+
+.hero .hero-title{
+  word-break:keep-all;
+  white-space:normal;
+}
+
+.hero .hero-description{
+  word-break:keep-all;
+  white-space:normal;
+}
