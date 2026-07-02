@@ -1228,6 +1228,28 @@
     letter-spacing:-0.02em;
     white-space:nowrap;
 }
+
+	/* 모바일 헤더 */
+
+.header .inner{
+    padding: 0 10px;
+}
+
+.nav{
+    width:60%;
+    display:flex;
+    justify-content:space-between;
+    gap:0;
+}
+
+.nav a{
+    font-size:11px;
+}
+
+.logo img{
+    height:26px;
+    width:auto;
+}
 	
 }
 
