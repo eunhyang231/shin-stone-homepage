@@ -1149,3 +1149,37 @@
     white-space:nowrap;
   }
 }
+
+/* =========================
+   Mobile Header Final
+========================= */
+@media (max-width:768px){
+
+  .header .inner{
+    height:68px !important;
+    padding:0 16px !important;
+    flex-direction:row !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+  }
+
+  .logo img,
+  .logo-image img{
+    height:34px !important;
+    width:auto !important;
+  }
+
+  .nav{
+    display:flex !important;
+    align-items:center !important;
+    gap:18px !important;
+    padding:0 !important;
+    border-top:0 !important;
+  }
+
+  .nav a{
+    font-size:12px !important;
+    font-weight:800 !important;
+    white-space:nowrap !important;
+  }
+}
