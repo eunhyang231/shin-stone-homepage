@@ -55,9 +55,9 @@
   }
 
 .header .nav{
-    margin-left:-22px;
+    margin-left:22px;
     margin-right:-22px;
-    width:calc(100% + 44px);
+   /* width:calc(100% + 44px);*/
 
     background:#f8f9fb;
 
