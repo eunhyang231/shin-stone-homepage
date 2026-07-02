@@ -1183,3 +1183,28 @@
     white-space:nowrap !important;
   }
 }
+@media (max-width:768px){
+
+  .header .inner{
+    height:70px;
+    padding:0 12px;
+  }
+
+  /* 로고 */
+  .logo img,
+  .logo-image img{
+    height:32px;
+  }
+
+  /* 메뉴 */
+  .nav{
+    gap:10px;
+  }
+
+  .nav a{
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:-0.02em;
+  }
+
+}
