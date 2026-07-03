@@ -97,3 +97,54 @@
 .product-card + .product-card{
   margin-top:36px;
 }
+
+/* =====================================
+   Anchor Hero
+===================================== */
+
+.category-hero{
+
+    padding:120px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #16263c,
+            #243852
+        );
+
+    color:#fff;
+}
+
+.category-hero .section-label{
+
+    color:#c8d2de;
+
+    letter-spacing:4px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+}
+
+.category-hero h1{
+
+    font-size:58px;
+
+    margin-bottom:20px;
+
+    font-weight:900;
+}
+
+.category-hero-text{
+
+    max-width:520px;
+
+    color:#d4dde8;
+
+    line-height:1.9;
+
+    font-size:18px;
+}
