@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+function initOpenPopup() {
   const openPopup = document.getElementById("openPopup");
   const openPopupClose = document.getElementById("openPopupClose");
   const openPopupBottomClose = document.getElementById("openPopupBottomClose");
@@ -37,4 +37,4 @@ document.addEventListener("DOMContentLoaded", function () {
   if (openPopupBottomClose) {
     openPopupBottomClose.addEventListener("click", closeOpenPopup);
   }
-});
+}
