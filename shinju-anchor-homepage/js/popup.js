@@ -1,31 +1,40 @@
-const openPopup = document.getElementById("openPopup");
-const openPopupClose = document.getElementById("openPopupClose");
-const openPopupBottomClose = document.getElementById("openPopupBottomClose");
-const openPopupToday = document.getElementById("openPopupToday");
+document.addEventListener("DOMContentLoaded", function () {
+  const openPopup = document.getElementById("openPopup");
+  const openPopupClose = document.getElementById("openPopupClose");
+  const openPopupBottomClose = document.getElementById("openPopupBottomClose");
+  const openPopupToday = document.getElementById("openPopupToday");
 
-const popupStorageKey = "shinjuOpenPopupClosedDate";
+  const popupStorageKey = "shinjuOpenPopupClosedDate";
 
-function getTodayString(){
-  const today = new Date();
-  return today.toISOString().slice(0, 10);
-}
+  if (!openPopup) return;
 
-function closeOpenPopup(){
-  if(openPopupToday.checked){
-    localStorage.setItem(popupStorageKey, getTodayString());
+  function getTodayString() {
+    const today = new Date();
+    return today.toISOString().slice(0, 10);
   }
 
-  openPopup.classList.add("is-hidden");
-}
+  function closeOpenPopup() {
+    if (openPopupToday && openPopupToday.checked) {
+      localStorage.setItem(popupStorageKey, getTodayString());
+    }
 
-if(openPopup){
-  const savedDate = localStorage.getItem(popupStorageKey);
-  const today = getTodayString();
-
-  if(savedDate === today){
     openPopup.classList.add("is-hidden");
   }
 
-  openPopupClose.addEventListener("click", closeOpenPopup);
-  openPopupBottomClose.addEventListener("click", closeOpenPopup);
-}
+  const savedDate = localStorage.getItem(popupStorageKey);
+  const today = getTodayString();
+
+  if (savedDate === today) {
+    openPopup.classList.add("is-hidden");
+  } else {
+    openPopup.classList.remove("is-hidden");
+  }
+
+  if (openPopupClose) {
+    openPopupClose.addEventListener("click", closeOpenPopup);
+  }
+
+  if (openPopupBottomClose) {
+    openPopupBottomClose.addEventListener("click", closeOpenPopup);
+  }
+});
